@@ -39,6 +39,7 @@ namespace SWOF
                 app.UseDeveloperExceptionPage();
             }
 
+            SeedData.Initialize(app.ApplicationServices);
             app.UseMvc();
         }
     }
