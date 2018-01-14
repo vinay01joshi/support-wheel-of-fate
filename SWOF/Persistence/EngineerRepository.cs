@@ -3,10 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using SWOF.Core.Models;
 using SWOF.Core.Resources;
 using SWOF.Data;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SWOF.Persistence
 {

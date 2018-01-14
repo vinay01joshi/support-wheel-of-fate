@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SWOF.Persistence
 {
-    interface IEngineerRepository
+    public interface IEngineerRepository
     {
         /// <summary>
         /// Reads all the engineers from the repository
