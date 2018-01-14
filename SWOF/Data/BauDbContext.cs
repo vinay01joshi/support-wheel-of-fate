@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SWOF.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,7 @@ namespace SWOF.Data
         {
 
         }
+
+        public DbSet<Engineer> Engineer { get; set; }
     }
 }
