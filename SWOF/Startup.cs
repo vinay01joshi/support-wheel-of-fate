@@ -69,20 +69,10 @@ namespace SWOF
             services.AddAutoMapper();
 
             // Register the Swagger generator
-            services.AddSwaggerGen(c =>
-            {
-                var info = new Info
-                {
-                    Contact = new Contact { Name = "J. Oliver" },
-                    Title = "Support Wheel API",
-                    Version = "v1"
-                };
-                c.SwaggerDoc("v1", info);
 
-                // Set the comments path for the swagger json and ui
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "SupportWheel.xml");
-                c.IncludeXmlComments(xmlPath);
+            services.AddSwaggerGen(sw =>
+            {
+                sw.SwaggerDoc("v1", new Info { Title = "Support Wheel Of Fate Api's", Version = "v1" });
             });
         }
 
@@ -94,13 +84,16 @@ namespace SWOF
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMvc();
+            app.UseStaticFiles();
+
+            app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "SupportWheelOfFate");
             });
 
             /// SeedData.Initialize(app.ApplicationServices);
-            app.UseMvc();
         }
     }
 }
