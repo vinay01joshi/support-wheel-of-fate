@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BsNavbarComponent } from './bs-navbar.component';
+import { ShiftComponent } from './shift.component';
 
-describe('BsNavbarComponent', () => {
-  let component: BsNavbarComponent;
-  let fixture: ComponentFixture<BsNavbarComponent>;
+describe('ShiftComponent', () => {
+  let component: ShiftComponent;
+  let fixture: ComponentFixture<ShiftComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BsNavbarComponent ]
+      declarations: [ ShiftComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BsNavbarComponent);
+    fixture = TestBed.createComponent(ShiftComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
