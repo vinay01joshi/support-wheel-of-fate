@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWOF", "SWOF.csproj", "{841D397A-925C-49F4-ACFB-922738A5EFFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{841D397A-925C-49F4-ACFB-922738A5EFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841D397A-925C-49F4-ACFB-922738A5EFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841D397A-925C-49F4-ACFB-922738A5EFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841D397A-925C-49F4-ACFB-922738A5EFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B03439F4-3FEF-41BE-96E2-DFB60DEC1D15}
+	EndGlobalSection
+EndGlobal
