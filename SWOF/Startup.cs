@@ -68,8 +68,9 @@ namespace SWOF
 
             services.AddAutoMapper();
 
-            // Register the Swagger generator
+            services.AddCors();
 
+            // Register the Swagger generator
             services.AddSwaggerGen(sw =>
             {
                 sw.SwaggerDoc("v1", new Info { Title = "Support Wheel Of Fate Api's", Version = "v1" });
@@ -84,7 +85,9 @@ namespace SWOF
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(option => option.AllowAnyOrigin());
             app.UseMvc();
+
             app.UseStaticFiles();
 
             app.UseSwagger();
@@ -92,8 +95,6 @@ namespace SWOF
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "SupportWheelOfFate");
             });
-
-            /// SeedData.Initialize(app.ApplicationServices);
         }
     }
 }
