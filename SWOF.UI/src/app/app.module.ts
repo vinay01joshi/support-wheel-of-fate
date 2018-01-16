@@ -14,9 +14,10 @@ import { ShiftComponent } from './shift/shift.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CalendarModule.forRoot()
+    CalendarModule.forRoot(),    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [AppComponent]
 })
 export class AppModule { }
