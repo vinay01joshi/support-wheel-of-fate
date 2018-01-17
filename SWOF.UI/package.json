@@ -22,7 +22,10 @@
     "@angular/platform-browser-dynamic": "^5.1.0",
     "@angular/router": "^5.1.0",
     "angular-calendar": "^0.23.2",
+    "bootstrap": "^4.0.0-beta.3",
     "core-js": "^2.4.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },

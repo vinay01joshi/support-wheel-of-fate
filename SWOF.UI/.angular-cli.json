@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/angular-calendar/css/angular-calendar.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],
