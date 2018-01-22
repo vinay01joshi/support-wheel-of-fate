@@ -1,35 +1,51 @@
-<ng-template #customCellTemplate let-day="day" let-locale="locale">
-  <div class="cal-cell-top">
-    <span class="cal-day-badge" *ngIf="day.badgeTotal > 0">{{ day.badgeTotal }}</span>
-    <span class="cal-day-number">{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span>
-  </div>
-  <small 
-    *ngIf="day.events[0] != null " 
-    style="margin: 5px"> 
-    <b>
-      {{ day.events[0].title }} 
-    </b> are working for the day
-  </small>
-</ng-template>
-<div class="calender-container">
-    <div [ngSwitch]="view">
-        <mwl-calendar-month-view
-          *ngSwitchCase="'month'"
-          [viewDate]="viewDate"
-          [excludeDays]="excludeDays"
-          [cellTemplate]="customCellTemplate"
-          (beforeViewRender)="beforeMonthViewRender($event)">
-        </mwl-calendar-month-view>
-        <!-- <mwl-calendar-week-view
-          *ngSwitchCase="'week'"
-          [excludeDays]="excludeDays"
-          [viewDate]="viewDate"
-          [events]="events">
-        </mwl-calendar-week-view>
-        <mwl-calendar-day-view
-          *ngSwitchCase="'day'"
-          [viewDate]="viewDate"
-          [events]="events">
-        </mwl-calendar-day-view> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+        <ng-template #customCellTemplate let-day="day" let-locale="locale">
+            <div class="cal-cell-top">
+              <span class="cal-day-badge" *ngIf="day.badgeTotal > 0">{{ day.badgeTotal }}</span>
+              <span class="cal-day-number">{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span>
+            </div>
+            <small 
+              *ngIf="day.events[0] != null " 
+              style="margin: 5px"> 
+              <b>
+                {{ day.events[0].title }} 
+              </b> are working for the day
+            </small>
+          </ng-template>
+          <div >
+              <div [ngSwitch]="view">
+                  <mwl-calendar-month-view
+                    *ngSwitchCase="'month'"
+                    [viewDate]="viewDate"
+                    [excludeDays]="excludeDays"
+                    [cellTemplate]="customCellTemplate"
+                    (beforeViewRender)="beforeMonthViewRender($event)">
+                  </mwl-calendar-month-view>
+                  <!-- <mwl-calendar-week-view
+                    *ngSwitchCase="'week'"
+                    [excludeDays]="excludeDays"
+                    [viewDate]="viewDate"
+                    [events]="events">
+                  </mwl-calendar-week-view>
+                  <mwl-calendar-day-view
+                    *ngSwitchCase="'day'"
+                    [viewDate]="viewDate"
+                    [events]="events">
+                  </mwl-calendar-day-view> -->
+                </div>
+          </div> 
+    </div>
+    <div class="col-md-4">     
+      <div class="user-list"> 
+          <ul class="list-group">
+              <li class="list-group-item" *ngFor="let engineer of engineers">
+                {{ engineer.name }}
+              </li>              
+            </ul>
       </div>
+    </div>
+  </div>
 </div>
+

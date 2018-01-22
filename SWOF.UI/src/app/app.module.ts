@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { ShiftComponent } from './shift/shift.component';
 import { ShiftService } from './services/shift.service';
+import { EngineerService } from './services/engineer.service';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { ShiftService } from './services/shift.service';
     HttpClientModule,
     CalendarModule.forRoot(),    
   ],
-  providers: [ShiftService],
+  providers: [ShiftService,EngineerService],
   bootstrap: [AppComponent],
   exports: [AppComponent]
 })
