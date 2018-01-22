@@ -361,7 +361,7 @@ var colors = {
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
     production: false,
-    service: "http://support-wheel-of-fate-swof.7e14.starter-us-west-2.openshiftapps.com/api/"
+    service: "https://support-wheel-of-fate-swof.7e14.starter-us-west-2.openshiftapps.com/api/"
 };
 
 
