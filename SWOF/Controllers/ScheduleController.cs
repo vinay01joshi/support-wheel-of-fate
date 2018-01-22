@@ -26,7 +26,6 @@ namespace SWOF.Controllers
             _optionsAccessor = optionsAccessor;
         }
 
-
         public IActionResult Generate()
         {
             var shifts = _scheduleGeneratorService.Generate(_optionsAccessor.Value.ShiftsPerPeriod, _optionsAccessor.Value.ShiftsPerEngineerPerPeriod);
