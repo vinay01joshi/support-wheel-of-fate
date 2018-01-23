@@ -5,7 +5,7 @@ A REST API that receives a request and should select two engineers at random to 
 -   ( Api ) - http://support-wheel-of-fate-swof.7e14.starter-us-west-2.openshiftapps.com/api/Engineer
 
 - ( Front End ) - https://vinay01joshi.github.io/support-wheel-of-fate/
-## Approtch
+## Approach
 - #### IEngineerPoolFactory
     - Creates a pool, using the number of shifts per engineer per period and figure to determine how many times each engineer is put into the pool
 
@@ -16,28 +16,29 @@ A REST API that receives a request and should select two engineers at random to 
    -  I implement this interface to adds a list of engineers to the pool and Retrieves an engineer from pool at random and Removes the specified engineer from the pool and Resets the list of engineers that can be pulled to the available list of engineers and Gets the number of engineers available abd Gets the number of engineers that have not yet been pulled
 
 
-## Descision Document
+## Decision Document
 #### Openshift 
-- Open shift is docker containersed based hosting environment in which you can deploy any type of code based on container you want .
-- Free Open and Startr version which include 1GB space and 2 CPU's
+- Open shift is docker containerize based hosting environment in which you can deploy any type of code based on container you want .
+- Free Open and starter version which include 1GB space and 2 CPU's
 - Free MySqL Database instance.
 
 ### Github pages
-- Github pages are very easy to deploy and make you repository url you fornt end code deployment end point.
+- Github pages are very easy to deploy and make you repository url you fornt end code deployment end point. [click here](https://github.com/vinay01joshi/support-wheel-of-fate/tree/master/SWOF.UI) SWOF.UI deployment document.
+  
 
 ### .Net Core
-- Any Operating system and Light weight framework which support C# with ever efficient depency injection support.
+- Any Operating system and Light weight framework which support C# with optimized dependency injection framework.
 
-- Any databaese support with Entity framework core such as i am using mySql
+- Any database support with Entity framework core such as i am using mySql
 
 ### Angular 4
-- Easy Signle page application development with agnular . Componenet driven framework that make you code more readable and structured. and two way binding is an advantage of angular 4.
+- Easy Singel page application development with agnular . Component driven framework that make your code more readable and structured. Also the two way binding is an advantage of angular 4.
 
 ### Bootstrap 4
-- Early release of bootstrap new version is very easy to integrate with any frontend framework which provides more mooth designs.
+- Early release of bootstrap new version is very easy to integrate with any frontend framework which provides more smooth designs.
 
 ### App Veyor
-- Easty to integrate contineous build and deployment with .net core .
+- Easy to integrate contineous build and deployment with .net core .
 
 ##   Project Structure
 - SWOF 
