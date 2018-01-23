@@ -1,9 +1,6 @@
 ﻿using SWOF.Core.Contract;
 using SWOF.Core.Resources;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SWOF.BusinessLogic
 {

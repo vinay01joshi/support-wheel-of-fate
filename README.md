@@ -1,6 +1,33 @@
 # Support Wheel of Fate - API
 A REST API that receives a request and should select two engineers at random to both complete a half day of support each.
 
+## Approtch
+
+
+## Descision Document
+#### Openshift 
+- Open shift is docker containersed based hosting environment in which you can deploy any type of code based on container you want .
+- Free Open and Startr version which include 1GB space and 2 CPU's
+- Free MySqL Database instance.
+
+### Github pages
+- Github pages are very easy to deploy and make you repository url you fornt end code deployment end point.
+
+### .Net Core
+- Any Operating system and Light weight framework which support C# with ever efficient depency injection support.
+
+- Any databaese support with Entity framework core such as i am using mySql
+
+### Angular 4
+- Easy Signle page application development with agnular . Componenet driven framework that make you code more readable and structured. and two way binding is an advantage of angular 4.
+
+### Bootstrap 4
+- Early release of bootstrap new version is very easy to integrate with any frontend framework which provides more mooth designs.
+
+### App Veyor
+- Easty to integrate contineous build and deployment with .net core .
+
+
 ##   Deployed Endpoints
 -   ( Api ) - http://support-wheel-of-fate-swof.7e14.starter-us-west-2.openshiftapps.com/api/Engineer
 
