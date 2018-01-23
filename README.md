@@ -2,6 +2,7 @@
 A REST API that receives a request and should select two engineers at random to both complete a half day of support each.
 
 ## Approtch
+- 
 
 
 ## Descision Document
@@ -66,12 +67,22 @@ A REST API that receives a request and should select two engineers at random to 
 - AutoMapper
 ## Continuous integrations & Continuous Delivery
 
-- AppVeyor Build Status
+#### AppVeyor Build Status
 
-    [![Build status](https://ci.appveyor.com/api/projects/status/p2nguxv1kg5r596e/branch/master?svg=true)](https://ci.appveyor.com/project/vinay01joshi18498/support-wheel-of-fate/branch/master)
+ - [![Build status](https://ci.appveyor.com/api/projects/status/p2nguxv1kg5r596e/branch/master?svg=true)](https://ci.appveyor.com/project/vinay01joshi18498/support-wheel-of-fate/branch/master)
 
-- Deployment
+#### Deployment
     Openshift containerised build and deployment with asp.net core 2.0 sdk in https://www.openshift.com/
+
+- #### commands
+`oc new-app registry.access.redhat.com/dotnet/dotnet-20-rhel7~https://github.com/vinay-joshi/openshift.git --build-env DOTNET_STARTUP_PROJECT=SWOF`
+
+`oc status`
+
+`oc expose svc/openshift`
+
+`oc get routes`
+
 
 
 
