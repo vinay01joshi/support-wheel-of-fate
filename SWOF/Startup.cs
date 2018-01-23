@@ -78,7 +78,8 @@ namespace SWOF
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(option => option.AllowAnyOrigin());
+            app.UseCors(builder =>
+                builder.WithOrigins("https://vinay01joshi.github.io"));
 
             app.UseSwagger();
 
