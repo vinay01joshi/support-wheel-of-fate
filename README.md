@@ -1,6 +1,10 @@
 # Support Wheel of Fate - API
 A REST API that receives a request and should select two engineers at random to both complete a half day of support each.
 
+##   Deployed Endpoints
+-   ( Api ) - http://support-wheel-of-fate-swof.7e14.starter-us-west-2.openshiftapps.com/api/Engineer
+
+- ( Front End ) - https://vinay01joshi.github.io/support-wheel-of-fate/
 ## Approtch
 - #### IEngineerPoolFactory
     - Creates a pool, using the number of shifts per engineer per period and figure to determine how many times each engineer is put into the pool
@@ -35,11 +39,6 @@ A REST API that receives a request and should select two engineers at random to 
 ### App Veyor
 - Easty to integrate contineous build and deployment with .net core .
 
-
-##   Deployed Endpoints
--   ( Api ) - http://support-wheel-of-fate-swof.7e14.starter-us-west-2.openshiftapps.com/api/Engineer
-
-- ( Front End ) - https://vinay01joshi.github.io/support-wheel-of-fate/
 ##   Project Structure
 - SWOF 
     
@@ -77,6 +76,9 @@ A REST API that receives a request and should select two engineers at random to 
 #### AppVeyor Build Status
 
  - [![Build status](https://ci.appveyor.com/api/projects/status/p2nguxv1kg5r596e/branch/master?svg=true)](https://ci.appveyor.com/project/vinay01joshi18498/support-wheel-of-fate/branch/master)
+
+ #### Test Execution
+ 
 
 #### Deployment
     Openshift containerised build and deployment with asp.net core 2.0 sdk in https://www.openshift.com/
