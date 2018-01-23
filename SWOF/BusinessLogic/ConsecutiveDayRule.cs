@@ -14,7 +14,7 @@ namespace SWOF.BusinessLogic
                 return true;
             }
             else
-            {
+            {   
                 bool isMorning = shiftId == 0 || shiftId % 2 == 0;
                 if (isMorning)
                 {

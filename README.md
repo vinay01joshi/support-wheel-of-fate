@@ -2,7 +2,14 @@
 A REST API that receives a request and should select two engineers at random to both complete a half day of support each.
 
 ## Approtch
-- 
+- #### IEngineerPoolFactory
+    - Creates a pool, using the number of shifts per engineer per period and figure to determine how many times each engineer is put into the pool
+
+- #### IScheduleGeneratorService
+    - Generates a schedule. Due to nature of the Random engineer picking, it sometimes picks the engineers in such a way that there is no valid way to populate all the shifts In this case we just have another go with a new Random object. For example, an engineer may not get picked until the 19th slot which is valid, but then the same engineer cannot be used in the remaining slot.
+
+- #### IEngineerPool
+   -  I implement this interface to adds a list of engineers to the pool and Retrieves an engineer from pool at random and Removes the specified engineer from the pool and Resets the list of engineers that can be pulled to the available list of engineers and Gets the number of engineers available abd Gets the number of engineers that have not yet been pulled
 
 
 ## Descision Document
