@@ -19,7 +19,7 @@ build_script:
 after_build:
   # For once the build has completed
 artifacts:
- - path: '\SWOF\bin\Debug\netcoreapp1.1\publish'
+ - path: '\SWOF\bin\Debug\netcoreapp2.0\publish'
    name: WebApi
    type: WebDeployPackage
 clone_depth: 1
