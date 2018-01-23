@@ -28,7 +28,7 @@ test_script:
   - cmd: dotnet restore ./SWOF.Test/SWOF.Test.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
   - cmd: cd SWOF.Test 
-  - cmd: dotnet xunit
+  - cmd: dotnet test
 on_finish :
   # any cleanup in here
 deploy: off
