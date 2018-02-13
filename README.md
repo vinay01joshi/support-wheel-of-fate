@@ -84,6 +84,9 @@ A REST API that receives a request and should select two engineers at random to 
 #### Deployment
     Openshift containerize build and deployment with asp.net core 2.0 sdk in https://www.openshift.com/
 
+#### Sequence Diagram
+![](sowf-sequence.png)
+
 - #### commands
 `oc new-app registry.access.redhat.com/dotnet/dotnet-20-rhel7~https://github.com/vinay-joshi/openshift.git --build-env DOTNET_STARTUP_PROJECT=SWOF`
 
