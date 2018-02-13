@@ -88,7 +88,7 @@ A REST API that receives a request and should select two engineers at random to 
 ![](sowf-sequence.png)
 
 - #### commands
-`oc new-app registry.access.redhat.com/dotnet/dotnet-20-rhel7~https://github.com/vinay-joshi/openshift.git --build-env DOTNET_STARTUP_PROJECT=SWOF`
+`oc new-app registry.access.redhat.com/dotnet/dotnet-20-rhel7~https://github.com/vinay01joshi/support-wheel-of-fate.git --build-env DOTNET_STARTUP_PROJECT=SWOF`
 
 `oc status`
 
